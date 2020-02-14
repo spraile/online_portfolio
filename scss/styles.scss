@@ -1,0 +1,94 @@
+$theme-colors: (
+	"primary" : red
+);
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$header-font: "Raleway", sans-serif;
+$normal-font: "Merriweather", serif;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.tools {
+	font-size : 5rem;
+	margin: 5px;
+
+}
+.tools:before {
+	text-align: center;
+    display: block;
+    width:100px;
+}
+nav {
+	border-bottom: 2px solid #333;
+}
+
+.fa-arrow-down {
+	font-size : 3rem;
+	color : gray;
+}
+
+.fa-html5 {
+	color : orangered;
+}
+
+.fa-css3-alt {
+	color : royalblue;
+}
+
+.fa-bootstrap {
+	color : purple;
+}
+
+.fa-git-alt {
+	color : orangered;
+}
+
+.fa-js-square {
+	color : orange;
+}
+
+.fa-node {
+	color : yellowgreen;
+}
+
+.fa-laravel {
+	color : red;
+}
+
+.fa-react {
+	color : mediumturquoise;
+}
+
+.fa-database {
+	color : royalblue;
+}
+
+.fa-php {
+	color : royalblue;
+}
+
+.fa-sass {
+	color : orchid;
+}
+
+#headBanner {
+	height: calc(100vh - 56px);
+}
+
+#aboutMe, #myWork {
+	min-height: 100vh
+}
+
+
+
