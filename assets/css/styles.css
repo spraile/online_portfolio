@@ -9876,6 +9876,7 @@ h3 {
   }
 }
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -9949,6 +9950,15 @@ nav {
 
 #headBanner {
   height: calc(100vh - 56px);
+  background-image: url("./../images/myBg1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#headBanner .banner-flavor {
+  color: white;
 }
 
 #aboutMe, #myWork {
