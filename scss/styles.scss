@@ -1,6 +1,12 @@
 $theme-colors: (
-	"primary" : red
+	"primary" : #000721,
+	"secondary" : #840032,
+	"info" : #EAD2AC
 );
+
+// navy blue : #000721
+// burgundy : #840032
+// desert sand : #EAD2AC
 
 $border-radius: 0;
 $border-radius-lg: 0;
@@ -31,7 +37,8 @@ body {
     width:100px;
 }
 nav {
-	border-bottom: 2px solid #333;
+	border-bottom: 1px solid #EAD2AC;
+
 }
 
 .fa-arrow-down {
@@ -84,7 +91,7 @@ nav {
 }
 
 #headBanner {
-	height: calc(100vh - 56px);
+	height: calc(100vh);
 	background-image: url("./../images/myBg1.png");
 	 background-attachment: fixed;
   background-size: cover;
