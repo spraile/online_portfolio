@@ -1,6 +1,6 @@
 $theme-colors: (
 	"primary" : #000721,
-	"secondary" : #840032,
+	"secondary" : #fbc265,
 	"info" : #EAD2AC
 );
 
@@ -42,13 +42,17 @@ body {
     width:100px;
 }
 nav {
-	border-bottom: 1px solid #EAD2AC;
+	border-bottom: 1px solid #fbc265;
 
 }
 
 .fa-arrow-down {
 	font-size : 3rem;
 	color : gray;
+	transition: color 0.2s ease-in-out;
+	&:hover {
+		color : #fbc265;
+	}
 }
 
 .fa-html5 {
@@ -111,7 +115,9 @@ nav {
 
 
 #aboutMe, #myWork {
-	min-height: 100vh
+	min-height: 100vh;
+	margin-top: 56px;
+	padding-top: 56px !important; 
 }
 
 
@@ -128,7 +134,7 @@ nav {
 #navBtn .btn-line {
 	width: 28px;
 	height: 2px;
-	margin: 7px 0;
+	margin: 6px 0;
 	background: #fff;
 	transition: 0.5s ease-out;
 }
@@ -151,4 +157,14 @@ nav {
 	transform: rotate(135deg);
   }
 
-
+#aboutMeBtn, #myWorkBtn, #homeBtn {
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	color: #ddd;
+	font-weight: bolder;
+	transition: color 0.3s ease-in-out;
+	&:hover {
+		color : #fbc265;
+	}
+}
