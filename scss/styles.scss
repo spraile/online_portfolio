@@ -1,10 +1,13 @@
 $theme-colors: (
-	"primary" : #000721,
+	"primary" :#1c2135,
 	"secondary" : #fbc265,
-	"info" : #EAD2AC
+	"info" : #EAD2AC,
+	"dark" : #222,
+	"primlite" : lighten(#1c2135,2%),
+	"darklite" : lighten(#222,2%)
 );
 
-$primary-color: #000721;
+$primary-color: #1c2135;
 $secondary-color: #fbc265;
 
 
@@ -46,8 +49,7 @@ body {
     width:100px;
 }
 nav {
-	border-bottom: 1px solid #fbc265;
-
+	border-bottom: 2px solid #fbc265;
 }
 
 .fa-arrow-down {
@@ -120,8 +122,7 @@ nav {
 
 #aboutMe, #myWork {
 	min-height: 100vh;
-	margin-top: 56px;
-	padding-top: 56px !important; 
+	padding-top: 112px !important; 
 }
 
 
@@ -183,4 +184,10 @@ nav {
 	&:hover{
 		color : darken($secondary-color,15%);
 	}
+}
+
+
+
+h3 {
+	font-weight: bolder;
 }
