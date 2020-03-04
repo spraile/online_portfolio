@@ -6,6 +6,9 @@ const homeBtn = document.querySelector("#homeBtn");
 
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
+aboutMeBtn.addEventListener("click", toggleMenu);
+myWorkBtn.addEventListener("click", toggleMenu);
+homeBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {

@@ -4,6 +4,10 @@ $theme-colors: (
 	"info" : #EAD2AC
 );
 
+$primary-color: #000721;
+$secondary-color: #fbc265;
+
+
 // navy blue : #000721
 // burgundy : #840032
 // desert sand : #EAD2AC
@@ -166,5 +170,17 @@ nav {
 	transition: color 0.3s ease-in-out;
 	&:hover {
 		color : #fbc265;
+	}
+	&:focus {
+		outline: 0;
+	}
+}
+
+.contactLink {
+	color : $secondary-color;
+	transition: color 0.3s ease-in-out;
+
+	&:hover{
+		color : darken($secondary-color,15%);
 	}
 }
