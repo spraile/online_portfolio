@@ -6,9 +6,9 @@ const homeBtn = document.querySelector("#homeBtn");
 
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
-aboutMeBtn.addEventListener("click", toggleMenu);
-myWorkBtn.addEventListener("click", toggleMenu);
-homeBtn.addEventListener("click", toggleMenu);
+aboutMeBtn.addEventListener("click", closeMenu);
+myWorkBtn.addEventListener("click", closeMenu);
+homeBtn.addEventListener("click", closeMenu);
 
 function toggleMenu() {
   if (!showMenu) {
@@ -27,6 +27,20 @@ function toggleMenu() {
   } else {
     menuBtn.classList.remove("close");
 
+
+    //Set Menu State
+    showMenu = false;
+  }
+}
+
+function closeMenu() {
+  if (!showMenu) {
+    menuBtn.classList.add("close");
+
+    //Set Menu State
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("close");
 
     //Set Menu State
     showMenu = false;

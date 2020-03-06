@@ -1,10 +1,11 @@
 $theme-colors: (
 	"primary" :#1c2135,
 	"secondary" : #fbc265,
-	"info" : #EAD2AC,
+	"info" : #ffae2c,
 	"dark" : #222,
 	"primlite" : lighten(#1c2135,2%),
-	"darklite" : lighten(#222,2%)
+	"darklite" : lighten(#222,2%),
+	"secdark" : darken(#fbc265,5%)
 );
 
 $primary-color: #1c2135;
@@ -132,6 +133,10 @@ nav {
 
 #navBtn {
 	transition: 0.5s ease-out;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
 
 }
 
@@ -148,6 +153,8 @@ nav {
 	transform: rotate(180deg);
 	padding: 4px 12px;
 	margin-top: 9px;
+	
+
 
 
 }
